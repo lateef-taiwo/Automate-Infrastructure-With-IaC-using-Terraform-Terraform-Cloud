@@ -35,4 +35,3 @@ Before you proceed ensure you have the following tools installed on your local m
 packer
 Ansible
 Refer to this repository for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
-
