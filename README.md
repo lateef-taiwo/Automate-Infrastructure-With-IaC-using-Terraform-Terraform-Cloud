@@ -11,6 +11,7 @@ Le us explore how we can migrate our codes to Terraform Cloud and manage our AWS
 
 2. Create an organization
 Select "Start from scratch", choose a name for your organization and create it.
+
 3. Configure a workspace
 
     Understand the difference between version control workflow, CLI-driven workflow and API-driven workflow and other configurations that we are going to implement.
@@ -19,3 +20,9 @@ Create a new repository in your GitHub and call it terraform-cloud, push your Te
 Choose version control workflow and you will be prompted to connect your GitHub account to your workspace – follow the prompt and add your newly created repository to the workspace.
 
 Move on to "Configure settings", provide a description for your workspace and leave all the rest settings default, click "Create workspace".
+
+4. Configure variables
+Terraform Cloud supports two types of variables: environment variables and Terraform variables. Either type can be marked as sensitive, which prevents them from being displayed in the Terraform Cloud web UI and makes them write-only.
+Set two environment variables: AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY, set the values that you used in Project 16. These credentials will be used to privision your AWS infrastructure by Terraform Cloud.
+After you have set these 2 environment variables – your Terraform Cloud is all set to apply the codes from GitHub and create all necessary AWS resources.
+Now it is time to run our Terrafrom scripts, but in our previous project which was project 18, we talked about using Packer to build our images, and Ansible to configure the infrastructure, so for that we are going to make few changes to our our existing repository from Project 18.
