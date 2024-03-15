@@ -12,3 +12,10 @@ Le us explore how we can migrate our codes to Terraform Cloud and manage our AWS
 2. Create an organization
 Select "Start from scratch", choose a name for your organization and create it.
 3. Configure a workspace
+
+    Understand the difference between version control workflow, CLI-driven workflow and API-driven workflow and other configurations that we are going to implement.
+We will use version control workflow as the most common and recommended way to run Terraform commands triggered from our git repository.
+Create a new repository in your GitHub and call it terraform-cloud, push your Terraform codes developed in the previous projects to the repository.
+Choose version control workflow and you will be prompted to connect your GitHub account to your workspace – follow the prompt and add your newly created repository to the workspace.
+
+Move on to "Configure settings", provide a description for your workspace and leave all the rest settings default, click "Create workspace".
