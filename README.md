@@ -34,6 +34,13 @@ The files that would be Added is;
 
 Before you proceed ensure you have the following tools installed on your local 
 machine;
-1. packer
-2. Ansible
-Refer to this repository for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
+* packer
+* Ansible
+Refer to this [repository](https://github.com/dareyio/PBL-project-19) for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
+
+6. Run `terraform plan` and `terraform apply` from web console
+Switch to "Runs" tab and click on "Queue plan manualy" button. If planning has been successfull, you can proceed and confirm Apply – press "Confirm and apply", provide a comment and "Confirm plan"
+Check the logs and verify that everything has run correctly. Note that Terraform Cloud has generated a unique state version that you can open and see the codes applied and the changes made since the last run.
+
+7. Test automated terraform plan
+By now, you have tried to launch plan and apply manually from Terraform Cloud web console. But since we have an integration with GitHub, the process can be triggered automatically. Try to change something in any of .tf files and look at "Runs" tab again – plan must be launched automatically, but to apply you still need to approve manually. Since provisioning of new Cloud resources might incur significant costs. Even though you can configure "Auto apply", it is always a good idea to verify your plan results before pushing it to apply to avoid any misconfigurations that can cause ‘bill shock’.
