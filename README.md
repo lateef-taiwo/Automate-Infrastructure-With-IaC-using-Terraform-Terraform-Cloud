@@ -23,15 +23,17 @@ Choose version control workflow and you will be prompted to connect your GitHub 
 
 4. Configure variables
 Terraform Cloud supports two types of variables: environment variables and Terraform variables. Either type can be marked as sensitive, which prevents them from being displayed in the Terraform Cloud web UI and makes them write-only.
-Set two environment variables: AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY, set the values that you used in Project 16. These credentials will be used to privision your AWS infrastructure by Terraform Cloud.
+Set two environment variables: AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY, set the values that you used in Project 16. These credentials will be used to provision your AWS infrastructure by Terraform Cloud.
 After you have set these 2 environment variables – your Terraform Cloud is all set to apply the codes from GitHub and create all necessary AWS resources.
 
 5. Now it is time to run our Terraform scripts, but in our previous project which was project 18, we talked about using Packer to build our images, and Ansible to configure the infrastructure, so for that we are going to make few changes to our our existing repository from Project 18.
 
-The files that would be Addedd is;
-AMI: for building packer images
-Ansible: for Ansible scripts to configure the infrastructure
-Before you proceed ensure you have the following tools installed on your local machine;
-packer
-Ansible
+The files that would be Added is;
+* AMI: for building packer images
+* Ansible: for Ansible scripts to configure the infrastructure.
+
+Before you proceed ensure you have the following tools installed on your local 
+machine;
+1. packer
+2. Ansible
 Refer to this repository for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
