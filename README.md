@@ -1,6 +1,15 @@
 # Automate-Infrastructure-With-IaC-using-Terraform-Terraform-Cloud
 In this project we will be using Packer to build our images, and Ansible to configure the Infrastructure.
 
+![](./images/Architecture-Diagram.png)
+
+In this project, we will be introducing two new concepts
+
+* Packer
+* Terraform Cloud
+
+### What is Packer?
+
 ### Migrate your .tf codes to Terraform Cloud
 Le us explore how we can migrate our codes to Terraform Cloud and manage our AWS infrastructure from there:
 1. Create a Terraform Cloud account
