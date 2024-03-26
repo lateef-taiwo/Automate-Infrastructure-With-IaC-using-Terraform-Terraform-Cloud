@@ -1,7 +1,7 @@
 # Automate-Infrastructure-With-IaC-using-Terraform-Terraform-Cloud
 In project 18 , we refactored our terraform codes into modules and as a result the introduction of modules into our codebase helped save time and reduce costly errors by re-using configuration written either by yourself, other members of your team, or other Terraform practitioners who have published modules for you to use.
 
-We require AMIs that are preconfigured with necessary packages for our applications to run on specific servers.
+We require AMIs that are pre-configured with necessary packages for our applications to run on specific servers.
 
 ![](./images/Architecture-Diagram.png)
 
@@ -38,6 +38,8 @@ Move on to "Configure settings", provide a description for your workspace and le
 Terraform Cloud supports two types of variables: environment variables and Terraform variables. Either type can be marked as sensitive, which prevents them from being displayed in the Terraform Cloud web UI and makes them write-only. 
 
 Set two environment variables: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, set the values that you used in [Project 16](https://github.com/lateef-taiwo/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1). These credentials will be used to provision your AWS infrastructure by Terraform Cloud. After you have set these 2 environment variables – your Terraform Cloud is all set to apply the codes from GitHub and create all necessary AWS resources.
+
+  ![](./images/env-vars.png)
 
 5. Now it is time to run our Terraform scripts, but in our previous project which was [project 18](https://github.com/lateef-taiwo/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-3-REFACTORING-USING-MODULES), we talked about using Packer to build our images, and Ansible to configure the infrastructure, so for that we are going to make few changes to our our existing repository from Project 18.
 
