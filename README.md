@@ -25,6 +25,8 @@ Most of the features are free, but if you want to explore the difference between
 
  Select "Start from scratch", choose a name for your organization and create it.
 
+  ![](./images/organization.png)
+
 3. Configure a workspace
 
 Understand the difference between version control workflow, CLI-driven workflow and API-driven workflow and other configurations that we are going to implement. We will use version control workflow as the most common and recommended way to run Terraform commands triggered from our git repository. Create a new repository in your GitHub and call it terraform-cloud, push your Terraform codes developed in the previous projects to the repository. Choose version control workflow and you will be prompted to connect your GitHub account to your workspace – follow the prompt and add your newly created repository to the workspace.
@@ -52,6 +54,8 @@ Before you proceed ensure you have the following tools installed on your local m
   ![](./images/packer-install-2.png)
 
   ![](./images/packer.png)
+
+  ![](./images/packer-2.png)
 
   ![](./images/packer-fmt.png)
 
