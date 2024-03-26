@@ -44,7 +44,15 @@ The files that would be Added is;
 Before you proceed ensure you have the following tools installed on your local machine;
 
 * packer
-* Ansible 
+  ![](./images/packer-install.png)
+
+  ![](./images/packer-install-2.png)
+
+  ![](./images/packer.png)
+
+  ![](./images/packer-fmt.png)
+
+* Ansible
 
 Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
 
