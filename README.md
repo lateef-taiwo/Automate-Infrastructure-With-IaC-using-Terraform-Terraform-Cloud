@@ -1,8 +1,11 @@
 # Automate-Infrastructure-With-IaC-using-Terraform-Terraform-Cloud
-In this project we will be using Packer to build our images, and Ansible to configure the Infrastructure.
+In project 18 , we refactored our terraform codes into modules and as a result the introduction of modules into our codebase helped save time and reduce costly errors by re-using configuration written either by yourself, other members of your team, or other Terraform practitioners who have published modules for you to use.
+
+We require AMIs that are preconfigured with necessary packages for our applications to run on specific servers.
 
 ![](./images/Architecture-Diagram.png)
 
+In this project we will be using Packer to build our images, and Ansible to configure the Infrastructure.
 In this project, we will be introducing two new concepts
 
 * Packer
