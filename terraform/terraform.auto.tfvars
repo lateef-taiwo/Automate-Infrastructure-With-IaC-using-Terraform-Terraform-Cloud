@@ -1,6 +1,6 @@
 region = "us-east-1"
 
-vpc_cidr = "10.0.0.0/16"
+vpc_cidr = "172.20.0.0/24"
 
 enable_dns_support = "true"
 
@@ -21,19 +21,19 @@ ami-nginx = "ami-0b54d415d905f0e7d"
 
 ami-sonar = "ami-01978e4126bbfd917"
 
-keypair = "devops"
+keypair = "servers"
 
 # Ensure to change this to your acccount number
-account_no = "128799896891"
+account_no = "005654795190"
 
-master-username = "tony"
+master-username = "savvytek"
 
-master-password = "devopspbl"
+master-password = "devops123"
 
 
 tags = {
-  Owner-Email     = "akojianthony2@gmail.com"
+  Owner-Email     = "taiwolateef55@gmail.com"
   Managed-By      = "terraform"
-  Billing-Account = "128799896891"
+  Billing-Account = "005654795190"
 } 
 
