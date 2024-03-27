@@ -46,7 +46,7 @@ sudo unzip awscliv2.zip
 sudo ./aws/install
 sudo yum install ansible -y
 sudo yum install -y policycoreutils-python-utils
-ansible-galaxy collection install amazon.aws
-ansible-galaxy collection install community.general
-ansible-galaxy collection install community.mysql
-ansible-galaxy collection install community.postgresql
+sudo ansible-galaxy collection install amazon.aws
+sudo ansible-galaxy collection install community.general
+sudo ansible-galaxy collection install community.mysql
+sudo ansible-galaxy collection install community.postgresql
