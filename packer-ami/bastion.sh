@@ -34,7 +34,7 @@ source ~/.bash_profile
 
 # install botocore, ansible and awscli
 sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python3.11 get-pip.py
+sudo python3 get-pip.py
 pip3 install boto3 botocore
 sudo python3 -m pip install PyMySQL
 sudo python3 -m pip install mysql-connector-python

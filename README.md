@@ -99,5 +99,14 @@ Install packer on your machine and input data required in each AMI created.
 
 Run packer build for each of the files required and confirm if the AMI's were created.
 
+ #### nginx
+ `packer build nginx.pkr.hcl`
+ ![](./images/packer-build-3.png)
+
+ ![](./images/packer-build-4.png)
+
+ ![](./images/packer-build-5.png)
+
+ ![](./images/packer-build-6.png)
 
 Update the new AMI's ID from the packer build in the terraform script
