@@ -61,6 +61,10 @@ Before you proceed ensure you have the following tools installed on your local m
 
   ![](./images/packer-fmt.png)
 
+  * Ensure Packer plugin is installed
+    `packer plugins install git`
+    ![](./images/packer-plugins.png)
+
 * Ansible
 
 Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
