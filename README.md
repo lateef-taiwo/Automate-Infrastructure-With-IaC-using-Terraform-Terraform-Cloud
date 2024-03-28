@@ -156,5 +156,19 @@ Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) f
  ![](./images/packer-build-ubuntu-3.png)
  ![](./images/packer-build-ubuntu-4.png)
 
+#### for web
+
+ `packer fmt ubuntu.pkr.hcl`
+
+ `packer validate ubuntu.pkr.hcl`
+
+ `packer build ubuntu.pkr.hcl`
+ ![](./images/packer-build-web-1.png)
+ ![](./images/packer-build-web-2.png)
+ ![](./images/packer-build-web-3.png)
+ ![](./images/packer-build-web-4.png)
+ ![](./images/packer-build-web-5.png)
 
 Update the new AMI's ID from the packer build in the terraform script
+
+![](./images/amis.png)
