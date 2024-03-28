@@ -114,9 +114,27 @@ Before you proceed ensure you have the following tools installed on your local m
 
 Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
 
+### for bastion
 
+`packer fmt bastion.pkr.hcl`
 
- #### nginx
+`packer validate bastion.pkr.hcl`
+
+`packer build bastion.pkr.hcl`
+ ![](./images/packer-build-bastion-1.png)
+
+ ![](./images/packer-build-bastion-2.png)
+
+ ![](./images/packer-build-bastion-3.png)
+
+ ![](./images/packer-build-bastion-4.png)
+
+ #### for nginx
+
+`packer fmt nginx.pkr.hcl`
+
+ `packer validate nginx.pkr.hcl`
+
  `packer build nginx.pkr.hcl`
  ![](./images/packer-build-3.png)
 
@@ -125,5 +143,19 @@ Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) f
  ![](./images/packer-build-5.png)
 
  ![](./images/packer-build-6.png)
+
+ #### for ubuntu
+
+ `packer fmt ubuntu.pkr.hcl`
+
+ `packer validate ubuntu.pkr.hcl`
+
+  `packer build ubuntu.pkr.hcl`
+ ![](./images/packer-build-ubuntu-1.png)
+ ![](./images/packer-build-ubuntu-2.png)
+ ![](./images/packer-build-ubuntu-3.png)
+ ![](./images/packer-build-ubuntu-4.png)
+
+
 
 Update the new AMI's ID from the packer build in the terraform script
