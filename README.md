@@ -47,8 +47,40 @@ The files that would be Added is;
 * AMI: for building packer images
 * Ansible: for Ansible scripts to configure the infrastructure.
 
+
+6. Run `terraform plan` and `terraform apply` from web console Switch to "Runs" tab and click on "Queue plan manually" button. If planning has been successful, you can proceed and confirm Apply – press "Confirm and apply", provide a comment and "Confirm plan" Check the logs and verify that everything has run correctly. Note that Terraform Cloud has generated a unique state version that you can open and see the codes applied and the changes made since the last run.
+
+7. Test automated `terraform plan` By now, you have tried to launch plan and apply manually from Terraform Cloud web console. But since we have an integration with GitHub, the process can be triggered automatically. Try to change something in any of `.tf` files and look at "Runs" tab again – `plan` must be launched automatically, but to `apply` you still need to approve manually. Since provisioning of new Cloud resources might incur significant costs. Even though you can configure "Auto apply", it is always a good idea to verify your plan results before pushing it to `apply` to avoid any misconfigurations that can cause ‘bill shock’.
+
+### Action Plan for this  project
+
+ * Build images using packer
+
+ * confirm the AMIs in the console
+
+ * update terraform script with new ami IDs generated from packer build
+
+ * create terraform cloud account and backend
+
+ * run terraform script
+
+ * update ansible script with values from teraform output
+    * RDS endpoints for wordpress and tooling
+    * Database name, password and username for wordpress and tooling
+    * Access point ID for wordpress and tooling
+    * Internal load balancer DNS for nginx reverse proxy
+
+ * run ansible script
+
+ * check the website
+
+* Install packer on your machine and input data required in each AMI created.
+
+* Run packer build for each of the files required and confirm if the AMI's were created.
+
 ### What is Packer?
 ---------
+Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration. Packer is lightweight, runs on every major operating system, and is highly performant, creating machine images for multiple platforms in parallel.
 
 ### Step 1. Creating Bastion, Nginx, Tooling and Wordpress AMIs
 
@@ -82,35 +114,7 @@ Before you proceed ensure you have the following tools installed on your local m
 
 Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) for guidance on how to refactor your environment to meet the new changes above and ensure you go through the README.md file.
 
-6. Run `terraform plan` and `terraform apply` from web console Switch to "Runs" tab and click on "Queue plan manually" button. If planning has been successful, you can proceed and confirm Apply – press "Confirm and apply", provide a comment and "Confirm plan" Check the logs and verify that everything has run correctly. Note that Terraform Cloud has generated a unique state version that you can open and see the codes applied and the changes made since the last run.
 
-7. Test automated `terraform plan` By now, you have tried to launch plan and apply manually from Terraform Cloud web console. But since we have an integration with GitHub, the process can be triggered automatically. Try to change something in any of `.tf` files and look at "Runs" tab again – `plan` must be launched automatically, but to `apply` you still need to approve manually. Since provisioning of new Cloud resources might incur significant costs. Even though you can configure "Auto apply", it is always a good idea to verify your plan results before pushing it to `apply` to avoid any misconfigurations that can cause ‘bill shock’.
-
-### Action Plan for this  project
-
- * Build images using packer
-
- * confirm the AMIs in the console
-
- * update terraform script with new ami IDs generated from packer build
-
- * create terraform cloud account and backend
-
- * run terraform script
-
- * update ansible script with values from teraform output
-    * RDS endpoints for wordpress and tooling
-    * Database name, password and username for wordpress and tooling
-    * Access point ID for wordpress and tooling
-    * Internal load balancer DNS for nginx reverse proxy
-
- * run ansible script
-
- * check the website
-
-Install packer on your machine and input data required in each AMI created.
-
-Run packer build for each of the files required and confirm if the AMI's were created.
 
  #### nginx
  `packer build nginx.pkr.hcl`
