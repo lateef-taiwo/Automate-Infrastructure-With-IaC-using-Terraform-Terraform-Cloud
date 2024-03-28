@@ -34,7 +34,7 @@ source ~/.bash_profile
 
 # install botocore, ansible and awscli
 sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python3 get-pip.py
+sudo python3.11 get-pip.py
 pip3 install boto3 botocore
 sudo python3 -m pip install PyMySQL
 sudo python3 -m pip install mysql-connector-python
@@ -46,7 +46,7 @@ sudo unzip awscliv2.zip
 sudo ./aws/install
 sudo yum install ansible -y
 sudo yum install -y policycoreutils-python-utils
-sudo ansible-galaxy collection install amazon.aws
-sudo ansible-galaxy collection install community.general
-sudo ansible-galaxy collection install community.mysql
-sudo ansible-galaxy collection install community.postgresql
+ansible-galaxy collection install amazon.aws
+ansible-galaxy collection install community.general
+ansible-galaxy collection install community.mysql
+ansible-galaxy collection install community.postgresql
