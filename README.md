@@ -11,7 +11,6 @@ In this project, we will be introducing two new concepts
 * Packer
 * Terraform Cloud
 
-### What is Packer?
 #### Migrate your .tf codes to Terraform Cloud
 Let us explore how we can migrate our codes to Terraform Cloud and manage our AWS infrastructure from there:
 
@@ -47,6 +46,20 @@ The files that would be Added is;
 
 * AMI: for building packer images
 * Ansible: for Ansible scripts to configure the infrastructure.
+
+### What is Packer?
+---------
+
+### Step 1. Creating Bastion, Nginx, Tooling and Wordpress AMIs
+
+We write packer code which helps us create AMIs for each of the following mentioned servers. A sample of the code can be found here: [packer code setup](https://github.com/lateef-taiwo/Automate-Infrastructure-With-IaC-using-Terraform-Terraform-Cloud/tree/main/packer-ami)
+
+For each of the following `.pkr.hcl` files, we run the following commands
+
+    - packer fmt <name>.pkr.hcl
+    - packer validate <name>.pkr.hcl
+    - packer build <name>.pkr.hcl
+
 
 Before you proceed ensure you have the following tools installed on your local machine;
 
