@@ -75,7 +75,7 @@ Before you proceed ensure you have the following tools installed on your local m
   ![](./images/packer-fmt.png)
 
   * Ensure Packer plugin is installed
-    `packer plugins install git`
+    `packer plugins install github.com/hashicorp/amazon`
     ![](./images/packer-plugins.png)
 
 * Ansible
@@ -92,7 +92,7 @@ Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) f
 
  * confirm the AMIs in the console
 
- * update terrafrom script with new ami IDs generated from packer build
+ * update terraform script with new ami IDs generated from packer build
 
  * create terraform cloud account and backend
 
