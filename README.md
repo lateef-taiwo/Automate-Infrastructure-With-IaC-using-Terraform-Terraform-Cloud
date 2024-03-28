@@ -157,5 +157,4 @@ Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) f
  ![](./images/packer-build-ubuntu-4.png)
 
 
-
 Update the new AMI's ID from the packer build in the terraform script
