@@ -172,3 +172,41 @@ Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) f
 Update the new AMI's ID from the packer build in the terraform script
 
 ![](./images/amis.png)
+
+### Step 2. Setting Up Infrastructures using Terraform Cloud
+-------------
+
+In this project, we changed the backend from S3 to a remote backend using Terraform Cloud. TF Cloud manages all state in our applications and carries out tf plan , tf validate and applies our infrastructures as required.
+
+To do this, we setup an organization on terraform cloud and a workspace and link our workspace to our repository. On every commit, a webhook is triggered on terraform cloud and plans or applies our terrraform code based on need.
+
+ ![](./images/tf-apply-1.png)
+ ![](./images/tf-appy-2.png)
+ ![](./images/tf-apply-3.png)
+ ![](./images/tf-apply-4.png)
+ ![](./images/tf-apply-5.png)
+
+  #### Resources created on AWS Cloud
+  `VPC`
+  ![](./images/vpc.png)
+
+  `Subnets`
+  ![](./images/subnnets.png)
+
+  `EC2 instances` 
+  ![](./images/ec2.png)
+
+  `EFS`
+  ![](./images/efs.png)
+
+ `Access points`
+  ![](./images/access-points.png)
+
+  `Route53`
+  ![](./images/route53-records.png)
+
+  `acm`
+  ![](./images/Architecture-Diagram.png)
+
+  `RDS Database`
+  ![](./images/rds.png)
