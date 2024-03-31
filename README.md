@@ -210,3 +210,16 @@ To do this, we setup an organization on terraform cloud and a workspace and link
 
   `RDS Database`
   ![](./images/rds.png)
+
+  `Security Groups`
+  ![](./images/SG.png)
+
+  `Route Tables`
+  ![](./images/route-tables.png)
+
+  `Internet Gateway`
+  ![](./images/igw.png)
+  
+  `Nat Gateway`
+  ![](./images/nat-gateway.png)
+
