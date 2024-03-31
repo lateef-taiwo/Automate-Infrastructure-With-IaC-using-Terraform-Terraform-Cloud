@@ -180,6 +180,13 @@ In this project, we changed the backend from S3 to a remote backend using Terraf
 
 To do this, we setup an organization on terraform cloud and a workspace and link our workspace to our repository. On every commit, a webhook is triggered on terraform cloud and plans or applies our terrraform code based on need.
 
+`terraform plan on terraform cloud ui`
+ ![](./images/tf-plan-ui.png)
+ ![](./images/tf-plan-ui-2.png)
+ ![](./images/tf-plan-ui-3.png)
+
+
+`terraform apply on terraform cloud ui`
  ![](./images/tf-apply-1.png)
  ![](./images/tf-appy-2.png)
  ![](./images/tf-apply-3.png)
