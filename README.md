@@ -213,7 +213,7 @@ To do this, we setup an organization on terraform cloud and a workspace and link
   ![](./images/route53-records.png)
 
   `acm`
-  ![](./images/Architecture-Diagram.png)
+  ![](./images/acm.png)
 
   `RDS Database`
   ![](./images/rds.png)
