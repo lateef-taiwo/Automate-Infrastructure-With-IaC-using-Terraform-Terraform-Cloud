@@ -3,15 +3,14 @@
 - name: nginx assignment
   import_playbook: ../static-assignments/nginx.yml
 
-- hosts: tag_Name_TCS_tooling 
-- name: tooling assignment
-  import_playbook: ../static-assignments/tooling.yml
-
 - hosts: tag_Name_TCS_wordpress
 - name: wordpress assignment
   import_playbook: ../static-assignments/wordpress.yml
 
-- hosts: tag_Name_TCS_Jenkins
+- hosts: tag_Name_TCS_tooling 
+- name: tooling assignment
+  import_playbook: ../static-assignments/tooling.yml
+
 - name: jenkins assignment
   import_playbook: ../static-assignments/jenkins.yml  
 
